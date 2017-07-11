@@ -1,0 +1,166 @@
+/*
+ Theme Name:   beetech child theme
+ Theme URI:    http://tyagibhai.com
+ Description:  beetech Child Theme
+ Author:       Anil Sharma
+ Author URI:   http://tyagibhai.com
+ Template:     beetech
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+*/
+#primary-menu>li{
+	position: relative;
+	top:7px;
+}
+#primary-menu>li:nth-child(2):after{
+	content: "\f078";
+	color: #fff;
+    font-family: FontAwesome;
+    position: absolute;
+    left:82px;
+    top:-1px;
+    opacity:.2;
+    font-size:14px;
+}
+/*Changing the color of dropdowns*/
+/*==================
+main navigation
+===================*/
+.site-header .main-navigation ul#primary-menu > li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+.site-header .main-navigation ul#primary-menu > li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+.site-header .main-navigation ul ul,
+.top-navigation ul#primary-menu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 999999;
+    width: 200px;
+    background:#1e949a;
+    left: 0;
+    margin-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+.site-header .main-navigation ul ul li,
+.top-navigation ul#primary-menu ul li {
+    position: relative;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+.top-navigation ul#primary-menu ul li {
+    padding: 5px 10px;
+}
+.site-header .main-navigation ul ul li:hover {
+    background: #068d94;
+}
+.site-header .main-navigation ul ul li a {
+    padding: 15px;
+    width: 100%;
+}
+.site-header .main-navigation ul li:hover > ul,
+.site-header .main-navigation ul ul ul li:hover > ul,
+.top-navigation ul#primary-menu li:hover > ul,
+.top-navigation ul#primary-menu ul ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+}
+.site-header .main-navigation ul ul ul,
+.top-navigation ul#primary-menu ul ul {
+    left: 200px;
+    top: 0;
+}
+.site-header .main-navigation ul#primary-menu > li > span.sub-toggle {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    color: #fff;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+.site-header .main-navigation ul#primary-menu > li ul li .sub-toggle {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    position: absolute;
+     color: #fff;
+     right: 10px;
+    top: 10px;
+}
+.site-header .main-navigation .menu-test-container {
+    padding-top: 15px;
+}
+.site-header .main-navigation ul#primary-menu > li:last-child ul ul {
+    left: -200px;
+}
+.site-header .site-branding{
+	width:20%;
+}
+.site-header .main-navigation {
+    width: 78%;
+}
+.bt-whole-header{
+	background:#1e949a !important;
+}
+.sticky-wrapper.is-sticky .site-header{
+	background:#068d94 !important;
+}
+.site-footer{
+	background:#068d94 !important;
+}
+.bt-innerpages-header-wrapper{
+	background:#00acee !important;
+}
+.bt-innerpages-header-wrapper:before{
+	background:#089096 !important;
+}
+.sep a{
+	text-transform: none !important;
+	color: #fff !important;
+	position: relative !important;
+	left:-5px !important;
+}
+a#scroll-up{
+	background:#0aad94 !important;
+	border:none;
+}
+/*header text all pages section*/
+.site-header .site-branding p.site-title a {
+    font-size: 20px !important;
+    text-transform: capitalize; !important;
+}
+.sticky-wrapper.is-sticky .site-header .site-branding p.site-title a {
+    font-size: 18px !important;
+    line-height: 1 !important;
+    text-transform: capitalize; !important;
+}
+/*header text home page section*/
+.site-branding .site-title-wrapper h1.site-title a {
+    font-size: 20px !important;
+    text-transform: capitalize !important;
+}
+.sticky-wrapper.is-sticky .site-branding .site-title-wrapper h1.site-title a {
+    font-size: 18px !important;
+    line-height: 1 !important;
+    text-transform: capitalize; !important;
+}
