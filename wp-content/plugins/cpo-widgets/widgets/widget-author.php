@@ -21,7 +21,8 @@ class Ctwg_Widget_Author extends WP_Widget{
 		$output .= '<div class="ctwg-author">';
 		$output .= '<div class="ctwg-author-image">'.get_avatar($userdata->user_email, $size).'</div>';
 		$output .= '<div class="ctwg-author-body">';
-		$output .= '<h4 class="ctwg-author-name"><a href="'.get_author_posts_url($userid).'">'.get_the_author().'</a></h4>';
+		$output.="<div style='position:relative;top:8px;'><a class='twitter-follow-button tfbc'  href='https://twitter.com/realAnilSharma' data-show-screen-name='false' data-show-count='true' data-size='large'>Follow @realAnilSharma</a></div>";
+
 		if($description != ''){
 			$output .= '<div class="ctwg-author-description">'.$description.'</div>';
 		}
