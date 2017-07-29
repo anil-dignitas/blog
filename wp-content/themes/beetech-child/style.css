@@ -8,6 +8,7 @@
  Version:      1.0.0
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 #primary-menu>li{
 	position: relative;
 	top:7px;
@@ -447,6 +448,26 @@ h1.entry-title,h2.entry-title a{
     ul.menu.parallax-menu li:nth-child(1), ul.menu li:nth-child(1) {
         border-top: 1px solid #1e949a !important;
     }
+    #primary-menu>li:nth-child(1):before{
+	    content: "\f015";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:-5px;
+        top:9px;
+        opacity:.5;
+        font-size:14px;
+    }
+    #primary-menu>li:nth-child(2):before{
+	    content: "\f03a";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:-5px;
+        top:12px;
+        opacity:.5;
+        font-size:10px;
+    }
     #primary-menu>li:nth-child(2):after{
 	    content: "\f078";
         color: #fff;
@@ -457,6 +478,113 @@ h1.entry-title,h2.entry-title a{
         opacity:.5;
         font-size:10px;
     }
+    #primary-menu>li:nth-child(3):before{
+	    content: "\f187";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:-5px;
+        top:11px;
+        opacity:.5;
+        font-size:10px;
+    }
+     #primary-menu>li:nth-child(4):before{
+	    content: "\f003";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:-5px;
+        top:10px;
+        opacity:.5;
+        font-size:11px;
+    }
+     #primary-menu>li:nth-child(5):before{
+	    content: "\f007";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:-5px;
+        top:10px;
+        opacity:.5;
+        font-size:11px;
+    }
+     #primary-menu>li:nth-child(2)>ul>li:nth-child(1):before{
+	    content: "\f019";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:0px;
+        top:15px;
+        opacity:.5;
+        font-size:10px;
+        margin-right:7px !important;
+    }
+    #primary-menu>li:nth-child(2)>ul>li:nth-child(1):before{
+	    content: "\f019";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:0px;
+        top:15px;
+        opacity:.5;
+        font-size:10px;
+        margin-right:7px !important;
+    }
+     #primary-menu>li:nth-child(2)>ul>li:nth-child(2):before{
+	    content: "\f201";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:0px;
+        top:15px;
+        opacity:.5;
+        font-size:10px;
+        margin-right:7px !important;
+    }
+    #primary-menu>li:nth-child(2)>ul>li:nth-child(3):before{
+	    content: "\f118";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:0px;
+        top:15px;
+        opacity:.5;
+        font-size:10px;
+        margin-right:7px !important;
+    }
+    #primary-menu>li:nth-child(2)>ul>li:nth-child(4):before{
+	    content: "\f1cd";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:0px;
+        top:15px;
+        opacity:.5;
+        font-size:10px;
+        margin-right:7px !important;
+    }
+    #primary-menu>li:nth-child(2)>ul>li:nth-child(5):before{
+	    content: "\f1e3";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:0px;
+        top:15px;
+        opacity:.5;
+        font-size:10px;
+        margin-right:7px !important;
+    }
+    #primary-menu>li:nth-child(3)>ul>li:before{
+	    content: "\f03a";
+        color: #fff;
+        font-family: FontAwesome;
+        position: absolute;
+        left:0px;
+        top:15px;
+        opacity:.5;
+        font-size:10px;
+        margin-right:7px !important;
+    }
      #primary-menu>li:nth-child(3):after{
 	   content: "\f078";
         color: #fff;
@@ -466,7 +594,9 @@ h1.entry-title,h2.entry-title a{
         top:12px;
         opacity:.5;
         font-size:10px;
+        margin-right:7px;
     }
+   
 /*----------------------------------------Drop Down------------------------------------  */
     #primary-menu li ul{
         /* display:none !important; */
@@ -476,15 +606,37 @@ h1.entry-title,h2.entry-title a{
      #primary-menu li ul li{
         /* display:none !important; */
         padding-top:12px !important;
+        margin-left:12px !important;
     }
     #primary-menu li ul li ul{
         display:none !important;
     }
-/*--------------------------------------------------------------------------------------  */
+    #primary-menu .fa:hover{
+        color:#fff !important;
+    }
+    #primary .entry-title {
+        color: #333;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        margin: 0 0 15px;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    h3.widget-title{
+        font-size: 18px !important;
+        font-family: 'Raleway', sans-serif !important;
+    }
+    .posted-on,.post-author,.comments-link{
+        display:block !important;
+        font-size:16px !important;
+        font-family: 'Raleway', sans-serif;
+    }
+    .entry-meta span{
+        padding:0px !important;
+        margin:0px !important;
+    }
 }
-
-
-
+/*--------------------------------------------------------------------------------------  */
 
 
 
